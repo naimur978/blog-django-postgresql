@@ -53,20 +53,45 @@ A Django REST API for a blog application using PostgreSQL as the database backen
    }
    ```
 
+
 5. **Setup the database:**
-   - Create a PostgreSQL database and user:
-     ```sh
-     sudo -u postgres psql
-     CREATE DATABASE blogdb;
-     CREATE USER bloguser WITH PASSWORD 'yourpassword';
-     GRANT ALL PRIVILEGES ON DATABASE blogdb TO bloguser;
-     \q
-     ```
-   - Run migrations:
-     ```sh
-     python manage.py makemigrations
-     python manage.py migrate
-     ```
+    - Access the PostgreSQL shell as the `postgres` user (use `-i` to bypass shell restrictions):
+       ```sh
+       sudo -u postgres -i psql
+       ```
+
+    - Create a PostgreSQL database and user:
+       ```sql
+       CREATE DATABASE blogdb;
+       CREATE USER bloguser WITH PASSWORD 'yourpassword';
+       GRANT ALL PRIVILEGES ON DATABASE blogdb TO bloguser;
+       ```
+
+    - To list all databases:
+       ```sql
+       \l
+       ```
+
+    - To connect to your new database:
+       ```sql
+       \c blogdb
+       ```
+
+    - To see all tables in the database:
+       ```sql
+       \dt
+       ```
+
+    - Exit the PostgreSQL shell:
+       ```sql
+       \q
+       ```
+
+    - Run migrations:
+       ```sh
+       python manage.py makemigrations
+       python manage.py migrate
+       ```
 
 6. **Run the development server:**
    ```sh
