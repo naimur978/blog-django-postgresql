@@ -2,13 +2,34 @@
 
 A Django REST API for a blog application using PostgreSQL as the database backend. This project supports user registration, login, profile updates, post creation, and commenting, with session-based authentication and CSRF protection.
 
+
 ## Table of Contents
+- [Dependencies & Software Requirements](#dependencies--software-requirements)
 - [Features](#features)
 - [Setup Instructions](#setup-instructions)
 - [Database Setup](#database-setup)
 - [API Endpoints](#api-endpoints)
 - [CSRF Protection](#csrf-protection)
 - [Using Postman](#using-postman)
+# Dependencies & Software Requirements
+
+Before you begin, make sure you have the following installed:
+
+- **Python 3.10+** (recommended: Python 3.13)
+- **PostgreSQL 13+**
+- **pip** (Python package manager)
+- **virtualenv** (optional, for creating isolated Python environments)
+- **Git** (for cloning the repository)
+
+Python dependencies are listed in `requirements.txt`:
+
+- Django >= 4.2
+- psycopg2 >= 2.9
+
+Install them with:
+```sh
+pip install -r requirements.txt
+```
 
 ---
 
