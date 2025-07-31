@@ -1,13 +1,9 @@
-# Related Projects
 
-If you are interested in a similar blog project built with Node.js, MongoDB, and React, check out my other repository:
-
-- [Blog Node.js MongoDB](https://github.com/naimur978/blog-nodejs-mongodb)
-
-I previously built and integrated a blog backend using Node.js, MongoDB, and React (see above). I created this Django/PostgreSQL project to try out Django for the backend and PostgreSQL as the database, and to compare the experience with my earlier stack.
 # Blog Django PostgreSQL
 
 A Django REST API for a blog application using PostgreSQL as the database backend. This project supports user registration, login, profile updates, post creation, and commenting, with session-based authentication and CSRF protection.
+
+I previously built and integrated a blog backend using Node.js, MongoDB, and React ([see this project](https://github.com/naimur978/blog-nodejs-mongodb)). I created this Django/PostgreSQL project to try out Django for the backend and PostgreSQL as the database, and to compare the experience with my earlier stack.
 
 
 ## Table of Contents
